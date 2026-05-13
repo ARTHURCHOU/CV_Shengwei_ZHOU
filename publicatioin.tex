@@ -1,0 +1,187 @@
+% --- LaTeX CV Template - S. Venkatraman ---
+
+% --- Set document class and font size ---
+
+\documentclass[letterpaper, 11pt]{article}
+
+% --- Package imports ---
+
+\usepackage{hyperref, enumitem, longtable, amsmath, array}
+
+% --- Page layout settings ---
+
+% Set page margins
+\usepackage[left=0in, right=0.4in, bottom=0.5in, top=0.8in, headsep=0in, footskip=.2in]{geometry}
+
+% Set line spacing
+\renewcommand{\baselinestretch}{1.2}
+
+% --- Page formatting settings ---
+
+% Set link colors
+\usepackage[dvipsnames]{xcolor}
+\hypersetup{colorlinks=true, linkcolor=MidnightBlue, urlcolor=MidnightBlue}
+
+% Set font to Libertine, including math support
+\usepackage{libertine}
+\usepackage[libertine]{newtxmath}
+\usepackage{marvosym}
+\usepackage{fontawesome5}
+% Remove page numbering
+\pagenumbering{gobble}
+
+% Define font size and color for section headings
+\newcommand{\headingfont}{\Large\color{OliveGreen}}
+
+% --- CV section settings ---
+
+% Note: each section of this table (Education, Awards, Publications etc.) is 
+% stored in a two-column table. The left-hand column is narrow (1 inch) and is 
+% meant to store dates. The right-hand column is wide (5.2 inches) and stores 
+% the main text.  Sections in which each entry might have multiple lines 
+% (e.g., Education) are stored in a 'SectionTable' environment). Sections in 
+% which each entry might just have one line are stored in a 'SectionTableSingleSpace'
+% environment. The only difference between the two environments is the line 
+% spacing between each entry. Both environments take one argument, which is the
+% title of the section. See main document for how these environments are used.
+
+% Define settings for left-hand column in which dates are printed
+\newcolumntype{R}{>{\raggedleft}p{1in}}
+
+% Define 'SectionTable' environment
+\newenvironment{SectionTable}[1]{
+	\renewcommand*{\arraystretch}{1.2}
+	\setlength{\tabcolsep}{8pt}
+	\begin{longtable}{Rp{6.2in}} & #1 \\}
+{\end{longtable}\vspace{-.7cm}}
+
+% Define 'SectionTableSingleSpace' environment
+\newenvironment{SectionTableSingleSpace}[1]{
+	\renewcommand*{\arraystretch}{1.2}
+	\setlength{\tabcolsep}{8pt}
+	\begin{longtable}{Rp{6.2in}} & #1 \\[0.6em]}
+{\end{longtable}\vspace{-.7cm}}
+
+% --- Document starts here ---
+
+\begin{document}
+
+% --- Name and contact information ---
+
+\begin{SectionTable}{\Huge Shengwei ZHOU \hfill{\it\footnotesize Updated \today}} & 
+\faEnvelope \; s.arthur.zhou@gmail.com   $\;\boldsymbol{\cdot}\;$ 
+\faGlobe \; \href{https://sites.google.com/view/shengweizhou}{sites.google.com/view/shengweizhou} \newline
+% Citizenship: China
+\end{SectionTable}
+
+% --- Section: Research interests ---
+
+\begin{SectionTableSingleSpace}{\headingfont Research interests}
+& Fair Division, Algorithmic Game Theory, Mechanism Design, Online Algorithm, \newline
+Approximation Algorithm.
+\end{SectionTableSingleSpace}
+
+% --- Section: Publications ---
+
+\begin{SectionTable}{\headingfont Conference proceedings \; \small\color{black}  ($\alpha$-$\beta$): Alphabetical order}
+
+[C14] & 
+\textbf{Degree-bounded Online Bipartite Matching Revisited: OCS vs. Ranking} \newline
+($\alpha$-$\beta$) Yilong Feng, Haolong Li, Xiaowei Wu, Shengwei Zhou. \newline
+In \textit{Proceedings of the 21st Conference on Web and Internet Economics (WINE)}, Dec 2025. Forthcoming. \\
+
+[C13] & 
+\textbf{Incentive Analysis of Collusion in Fair Division} \newline
+($\alpha$-$\beta$) Haoqiang Huang, Biaoshuai Tao, Mingwei Yang, Shengwei Zhou. \newline
+In \textit{Proceedings of the 21st Conference on Web and Internet Economics (WINE)}, Dec 2025. Forthcoming. \\
+
+[C12] & 
+\textbf{When is Truthfully Allocating Chores no Harder than Goods?} \newline
+($\alpha$-$\beta$) Bo Li, Biaoshuai Tao, Fangxiao Wang, Xiaowei Wu, Mingwei Yang, Shengwei Zhou. \newline
+In \textit{Proceedings of the 18th International Symposium on Algorithmic Game Theory (SAGT)}, Sep 2025. doi:\href{https://link.springer.com/chapter/10.1007/978-3-032-03639-1_14}{10.1007/978-3-032-03639-1\_14}.\\
+
+[C11] & 
+\textbf{Approximately EFX and PO Allocations for Bivalued Chores} \newline
+($\alpha$-$\beta$) Zehan Lin, Xiaowei Wu, Shengwei Zhou. \newline
+In \textit{Proceedings of the 34th International Joint Conference on Artificial Intelligence (IJCAI)}, Aug 2025. doi: \href{https://doi.org/10.24963/ijcai.2025/440}{10.24963/ijcai.2025/440} \\
+
+[C10] & 
+\textbf{A Little Subsidy Ensures MMS Allocation for Three Agents} \newline
+($\alpha$-$\beta$) Xiaowei Wu, Quan Xue, Shengwei Zhou. \newline
+In \textit{Proceedings of the 34th International Joint Conference on Artificial Intelligence (IJCAI)}, Aug 2025. doi: \href{https://doi.org/10.24963/ijcai.2025/454}{10.24963/ijcai.2025/454} \\
+
+[C9] & 
+\textbf{Revisiting Proportional Allocation with Subsidy: Simplification and Improvements} \newline
+($\alpha$-$\beta$) Xiaowei Wu, Quan Xue, Shengwei Zhou.  \newline
+In \textit{Proceedings of the 34th International Joint Conference on Artificial Intelligence (IJCAI)}, Aug 2025. doi: \href{https://doi.org/10.24963/ijcai.2025/455}{10.24963/ijcai.2025/455}\\
+
+[C8] & 
+\textbf{Pure Nash Equilibrium of Weight Picking Sequence Protocol is WEF1 for Two Agents} \newline
+($\alpha$-$\beta$) Rufan Bai, Huahua Miao, Xiaowei Wu, Cong Zhang, Shengwei Zhou.  \newline
+In \textit{Proceedings of the 19th International Joint Conference on Theoretical Computer Science – Frontier of Algorithmic Wisdom, IJTCS-FAW}, pages 238–251, Jun 2025. doi:\href{https://link.springer.com/chapter/10.1007/978-981-96-8312-3_18}{10.1007/978-981-96-8312-3\_18}. \\
+
+[C7] & 
+\textbf{Tree Splitting Based Rounding Scheme for Weighted Proportional Allocations with Subsidy} \newline
+($\alpha$-$\beta$) Xiaowei Wu, Shengwei Zhou.  \newline
+In \textit{Proceedings of the 20th Conference on Web and Internet Economics (WINE)}, Dec 2024. Forthcoming \\
+
+\vspace{-0.48cm}\hypertarget{EFX-IJTCS24}{[C6]} & 
+\textbf{On the Existence of EFX (and Pareto-Optimal) Allocations for Binary Chores} \newline
+($\alpha$-$\beta$) Biaoshuai Tao, Xiaowei Wu, Ziqi Yu, Shengwei Zhou.  \newline
+In \textit{Proceedings of the 18th International Joint Conference on Theoretical Computer Science – Frontier of Algorithmic Wisdom, IJTCS-FAW}, pages 33-52, Aug 2024. doi:\href{https://link.springer.com/chapter/10.1007/978-981-97-7752-5_3}{10.1007/978-981-97-7752-5\_3}.\\
+
+[C5] & 
+\textbf{One Quarter Each (on Average) Ensures Proportionality} \newline
+($\alpha$-$\beta$) Xiaowei Wu, Cong Zhang, Shengwei Zhou.  \newline
+In \textit{Proceedings of the 19th Conference on Web and Internet Economics (WINE)}, pages 582-599, Dec 2023. doi:\href{https://link.springer.com/chapter/10.1007/978-3-031-48974-7_33}{10.1007/978-3-031-48974-7\_33}.\\
+
+[C4] & 
+\textbf{Improved Competitive Ratios for Edge-Weighted Online Stochastic Matching} \newline
+Guoliang Qiu, Yilong Feng, Shengwei Zhou, Xiaowei Wu.  \newline
+In \textit{Proceedings of the 19th Conference on Web and Internet Economics (WINE)}, pages 527-544, Dec 2023. doi:\href{https://link.springer.com/chapter/10.1007/978-3-031-48974-7_30}{10.1007/978-3-031-48974-7\_30}.\\
+
+[C3] & 
+\textbf{Multi-agent Online Scheduling: MMS Allocations for Indivisible Items } \newline
+Shengwei Zhou, Rufan Bai, Xiaowei Wu.  \newline
+In \textit{Proceedings of the 40th International Conference on Machine Learning (ICML)}, pages 42506-42516, Jul 2023. doi:\href{https://dl.acm.org/doi/10.5555/3618408.3620197}{10.5555/3618408.3620197}.\\
+
+\vspace{-0.48cm}\hypertarget{WEF1-EC23}{[C2]}& 
+\textbf{Weighted EF1 Allocations for Indivisible Chores} \newline
+($\alpha$-$\beta$) Xiaowei Wu, Cong Zhang, Shengwei Zhou.  \newline
+In \textit{Proceedings of the 24th ACM Conference on Economics and Computation (EC)}, pages 1155, Jul 2023. doi:\href{https://dl.acm.org/doi/10.1145/3580507.3597763}{10.1145/3580507.3597763}.\\
+
+\vspace{-0.48cm}\hypertarget{EFX-IJCAI22}{[C1]} & 
+\textbf{Approximately EFX Allocations for Indivisible Chores} \newline
+Shengwei Zhou, Xiaowei Wu.  \newline
+In \textit{Proceedings of the 31st International Joint Conference on Artificial Intelligence (IJCAI)}, pages 783-789, Aug 2022. doi:\href{https://www.ijcai.org/proceedings/2022/110}{10.24963/ijcai.2022/110}.\\
+
+\end{SectionTable}
+
+\begin{SectionTable}{\headingfont Journal publications \; \small\color{black}  ($\alpha$-$\beta$): Alphabetical order \quad \Letter: Corresponding author}
+
+[J3] & 
+\textbf{Weighted EF1 Allocations for Indivisible Chores} \newline
+($\alpha$-$\beta$) Xiaowei Wu, Cong Zhang, Shengwei Zhou.  \newline
+\textit{Artificial Intelligence (AIJ)}, 347: 104386, Oct 2025. doi:\href{https://doi.org/10.1016/j.artint.2025.104386}{10.1016/j.artint.2025.104386}. \newline
+Preliminary version in EC 23 (\hyperlink{WEF1-EC23}{C2}).\\
+
+[J2] & 
+\textbf{On the Existence of EFX (and Pareto-Optimal) Allocations for Binary Chores} \newline
+($\alpha$-$\beta$) Biaoshuai Tao, Xiaowei Wu, Ziqi Yu, Shengwei Zhou\textsuperscript{\Letter}.  \newline
+\textit{Theoretical Computer Science (TCS)}, 1042:115248, Jul 2025. doi:\href{https://doi.org/10.1016/j.tcs.2025.115248}{10.1016/j.tcs.2025.115248}. \newline
+Preliminary version in IJTCS-FAW 24 (\hyperlink{EFX-IJTCS24}{C6}).\\
+
+[J1] & 
+\textbf{Approximately EFX Allocations for Indivisible Chores} \newline
+Shengwei Zhou, Xiaowei Wu.  \newline
+\textit{Artificial Intelligence (AIJ)}, 326, 104037, Jan 2024. doi:\href{https://doi.org/10.1016/j.artint.2023.104037}{10.1016/j.artint.2023.104037}. \newline
+Preliminary version in IJCAI 22 (\hyperlink{EFX-IJCAI22}{C1}).\\
+
+\end{SectionTable}
+
+\end{document}
+
+
+
+
+
