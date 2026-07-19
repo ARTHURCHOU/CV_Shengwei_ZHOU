@@ -1,0 +1,290 @@
+% --- 中文简历 - Shengwei ZHOU ---
+
+\documentclass[UTF8, fontset=none, letterpaper, 11pt]{ctexart}
+
+\usepackage{hyperref, enumitem, longtable, amsmath, amssymb, array}
+\usepackage[left=0.7in, right=0.8in, bottom=.8in, top=0.8in, headsep=0in, footskip=.2in]{geometry}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{marvosym}
+\usepackage{fontawesome5}
+
+\setCJKmainfont{Songti SC}
+\setCJKsansfont{Hiragino Sans GB}
+
+\hypersetup{colorlinks=true, linkcolor=MidnightBlue, urlcolor=MidnightBlue}
+\renewcommand{\baselinestretch}{1.18}
+\pagenumbering{gobble}
+
+\newcommand{\headingfont}{\Large\bfseries\color{OliveGreen}}
+\newcommand{\updatedate}{\number\year 年 \number\month 月 \number\day 日}
+
+\newcolumntype{R}{>{\raggedleft\arraybackslash}p{1in}}
+
+\newenvironment{SectionTable}[1]{
+  \renewcommand*{\arraystretch}{1.2}
+  \setlength{\tabcolsep}{10pt}
+  \begin{longtable}{Rp{5.2in}} & #1 \\}
+{\end{longtable}\vspace{-1cm}}
+
+\newenvironment{SectionTableSingleSpace}[1]{
+  \renewcommand*{\arraystretch}{1.2}
+  \setlength{\tabcolsep}{10pt}
+  \begin{longtable}{Rp{5.2in}} & #1 \\[0.6em]}
+{\end{longtable}\vspace{-.7cm}}
+
+\begin{document}
+
+\begin{SectionTable}{\Huge 周晟炜 \hfill{\footnotesize 更新日期：\updatedate}} &
+\faEnvelope \; s.arthur.zhou@gmail.com   $\;\boldsymbol{\cdot}\;$
+\faGlobe \; \href{https://sites.google.com/view/shengweizhou}{sites.google.com/view/shengweizhou}
+\end{SectionTable}
+
+\begin{SectionTable}{\headingfont 研究兴趣}
+& 公平分配、算法博弈论、机制设计、在线算法、近似算法。
+\end{SectionTable}
+
+\begin{SectionTable}{\headingfont 教育背景}
+2021 -- 2025 &
+\textbf{博士，计算机科学}，澳门大学，澳门特别行政区 \newline
+博士论文：\textit{Fairly Allocating Indivisible Chores to Symmetric and Asymmetric Agents}\newline
+导师：吴晓伟 教授 \\
+
+2019 -- 2020 &
+\textbf{硕士，城市信息学}，伦敦国王学院，英国伦敦 \newline
+论文导师：Angus Roberts 博士 \\
+
+2014 -- 2019 &
+\textbf{学士，城乡规划}，武汉大学，中国武汉 \newline
+辅修：地理信息科学 \\
+\end{SectionTable}
+
+\begin{SectionTable}{\headingfont 研究经历}
+2025 -- 至今 &
+\textbf{博士后研究员}，南洋理工大学，新加坡 \newline
+导师：贝小辉 教授\\
+
+2021 &
+\textbf{研究助理}，澳门大学，澳门特别行政区 \newline
+导师：吴晓伟 教授\\
+\end{SectionTable}
+
+\begin{SectionTableSingleSpace}{\headingfont 荣誉与奖学金}
+2025 &
+\textbf{最佳学生论文奖}，\textit{Conference on Web and Internet Economics (WINE)}\newline
+$225$ 篇投稿中唯一获奖论文\\
+
+2025 &
+\textbf{太湖奖学金}，澳门大学\newline
+粤港澳大湾区太湖奖学金\\
+
+2021 -- 2025 &
+\textbf{澳门大学博士助学金}，澳门大学\\
+
+2019 &
+\textbf{优秀学士学位论文奖}，武汉大学\newline
+本科毕业论文获评城市设计学院前 $5\%$\\
+\end{SectionTableSingleSpace}
+
+\begin{SectionTable}{\headingfont 工作论文 \; \small\color{black}  ($\alpha$-$\beta$)：作者按字母序 \quad \Letter：通讯作者}
+{[W5]} &
+\textbf{Subsidised Proportionality in Fair Allocation} \newline
+($\alpha$-$\beta$) Xiaowei Wu, Cong Zhang, Shengwei Zhou\textsuperscript{\Letter}.  \newline
+\textit{Operations Research} 小修（minor revision）\\
+
+{[W4]} &
+\textbf{Degree-bounded Online Bipartite Matching Revisited: OCS vs. Ranking} \newline
+($\alpha$-$\beta$) Yilong Feng, Haolong Li, Xiaowei Wu, Shengwei Zhou.  \newline
+投稿至 \textit{Mathematics of Operations Research}\\
+
+{[W3]} &
+\textbf{Efficient EFX Allocations for Chores} \newline
+($\alpha$-$\beta$) Zehan Lin, Xiaowei Wu, Shengwei Zhou.  \newline
+\textit{Artificial Intelligence} 在审\\
+
+{[W2]} &
+\textbf{An FPTAS for 7/9-Approximation to Maximin Share Allocations} \newline
+($\alpha$-$\beta$) Xin Huang, Shengwei Zhou.  \newline
+工作论文\\
+
+{[W1]} &
+\textbf{When Maximum Nash Welfare Becomes Strongly Fair: Bi-valued Goods} \newline
+($\alpha$-$\beta$) Zehan Lin, Xiaowei Wu, Shengwei Zhou.  \newline
+工作论文\\
+\end{SectionTable}
+
+\begin{SectionTable}{\headingfont 会议论文 \; \small\color{black}  ($\alpha$-$\beta$)：作者按字母序}
+{[C17]} &
+\textbf{Fair Division by Contribution: A Shapley Value Perspective} \newline
+($\alpha$-$\beta$) Xiaohui Bei, Pinyan Lu, Xiaowei Wu, Shengwei Zhou.  \newline
+\textit{Proceedings of the 27th ACM Conference on Economics and Computation (EC)}, 2026, Forthcoming.\\
+
+{[C16]} &
+\textbf{Allocating Chores with Restricted Additive Costs: Achieving EFX, MMS, and Efficiency Simultaneously} \newline
+($\alpha$-$\beta$) Zehan Lin, Xiaowei Wu, Shengwei Zhou.  \newline
+\textit{Proceedings of the ACM on Web Conference (WWW)}, pages 146-156, Apr 2026. doi:\href{https://doi.org/10.1145/3774904.3792300}{10.1145/3774904.3792300}\\
+
+{[C15]} &
+\textbf{All-but-One MMS Allocation for Chores} \newline
+($\alpha$-$\beta$) Jiawei Qiu, Xiaowei Wu, Cong Zhang, Shengwei Zhou.  \newline
+\textit{Proceedings of the ACM on Web Conference (WWW)}, pages 157-168, Apr 2026. doi:\href{https://doi.org/10.1145/3774904.3792305}{10.1145/3774904.3792305} \\
+
+{[C14]} &
+\textbf{Degree-bounded Online Bipartite Matching Revisited: OCS vs. Ranking} \newline
+($\alpha$-$\beta$) Yilong Feng, Haolong Li, Xiaowei Wu, Shengwei Zhou. \newline
+\textit{Proceedings of the 21st Conference on Web and Internet Economics (WINE)}, pages 747--764, Dec 2025.
+doi:\href{https://doi.org/10.1007/978-3-032-18660-7_39}{10.1007/978-3-032-18660-7\_39} $\bigstar$ \textbf{最佳学生论文} \\
+
+{[C13]} &
+\textbf{Incentive Analysis of Collusion in Fair Division} \newline
+($\alpha$-$\beta$) Haoqiang Huang, Biaoshuai Tao, Mingwei Yang, Shengwei Zhou. \newline
+\textit{Proceedings of the 21st Conference on Web and Internet Economics (WINE)}, pages 392--410, Dec 2025.
+doi:\href{https://doi.org/10.1007/978-3-032-18660-7_21}{10.1007/978-3-032-18660-7\_21}\\
+
+{[C12]} &
+\textbf{When is Truthfully Allocating Chores no Harder than Goods?} \newline
+($\alpha$-$\beta$) Bo Li, Biaoshuai Tao, Fangxiao Wang, Xiaowei Wu, Mingwei Yang, Shengwei Zhou. \newline
+\textit{Proceedings of the 18th International Symposium on Algorithmic Game Theory (SAGT)}, pages 247-264, Sep 2025. doi:\href{https://link.springer.com/chapter/10.1007/978-3-032-03639-1_14}{10.1007/978-3-032-03639-1\_14}. \\
+
+{[C11]} &
+\textbf{Approximately EFX and PO Allocations for Bivalued Chores} \newline
+($\alpha$-$\beta$) Zehan Lin, Xiaowei Wu, Shengwei Zhou. \newline
+\textit{Proceedings of the 34th International Joint Conference on Artificial Intelligence (IJCAI)}, pages 3952-3960, Aug 2025. doi:\href{https://doi.org/10.24963/ijcai.2025/440}{10.24963/ijcai.2025/440}.\\
+
+{[C10]} &
+\textbf{A Little Subsidy Ensures MMS Allocation for Three Agents} \newline
+($\alpha$-$\beta$) Xiaowei Wu, Quan Xue, Shengwei Zhou. \newline
+\textit{Proceedings of the 34th International Joint Conference on Artificial Intelligence (IJCAI)}, pages 4073-4081, Aug 2025. doi:\href{https://doi.org/10.24963/ijcai.2025/454}{10.24963/ijcai.2025/454}.\\
+
+{[C9]} &
+\textbf{Revisiting Proportional Allocation with Subsidy: Simplification and Improvements} \newline
+($\alpha$-$\beta$) Xiaowei Wu, Quan Xue, Shengwei Zhou.  \newline
+\textit{Proceedings of the 34th International Joint Conference on Artificial Intelligence (IJCAI)}, pages 4082-4090, Aug 2025. doi:\href{https://doi.org/10.24963/ijcai.2025/455}{10.24963/ijcai.2025/455}. \\
+
+{[C8]} &
+\textbf{Pure Nash Equilibrium of Weight Picking Sequence Protocol is WEF1 for Two Agents} \newline
+($\alpha$-$\beta$) Rufan Bai, Huahua Miao, Xiaowei Wu, Cong Zhang, Shengwei Zhou.  \newline
+\textit{Proceedings of the 19th International Joint Conference, IJTCS-FAW}, pages 238--251, Jun 2025. doi:\href{https://link.springer.com/chapter/10.1007/978-981-96-8312-3_18}{10.1007/978-981-96-8312-3\_18}. \\
+
+{[C7]} &
+\textbf{Tree Splitting Based Rounding Scheme for Weighted Proportional Allocations with Subsidy} \newline
+($\alpha$-$\beta$) Xiaowei Wu, Shengwei Zhou.  \newline
+\textit{Proceedings of the 20th Conference on Web and Internet Economics (WINE)}, pages 295--313, Dec 2024. doi:\href{https://link.springer.com/chapter/10.1007/978-3-032-08560-3_17}{10.1007/978-3-032-08560-3\_17}. \\
+
+\vspace{-0.48cm}\hypertarget{EFX-IJTCS24}{[C6]} &
+\textbf{On the Existence of EFX (and Pareto-Optimal) Allocations for Binary Chores} \newline
+($\alpha$-$\beta$) Biaoshuai Tao, Xiaowei Wu, Ziqi Yu, Shengwei Zhou.  \newline
+\textit{Proceedings of the 18th International Joint Conference, IJTCS-FAW}, pages 33-52, Aug 2024. doi:\href{https://link.springer.com/chapter/10.1007/978-981-97-7752-5_3}{10.1007/978-981-97-7752-5\_3}.\\
+
+{[C5]} &
+\textbf{One Quarter Each (on Average) Ensures Proportionality} \newline
+($\alpha$-$\beta$) Xiaowei Wu, Cong Zhang, Shengwei Zhou.  \newline
+\textit{Proceedings of the 20th Conference on Web and Internet Economics (WINE)}, pages 582-599, Dec 2023. doi:\href{https://link.springer.com/chapter/10.1007/978-3-031-48974-7_33}{10.1007/978-3-031-48974-7\_33}.\\
+
+{[C4]} &
+\textbf{Improved Competitive Ratio for Edge-Weighted Online Stochastic Matching} \newline
+Guoliang Qiu, Yilong Feng, Shengwei Zhou, Xiaowei Wu.  \newline
+\textit{Proceedings of the 20th Conference on Web and Internet Economics (WINE)}, pages 527-544, Dec 2023. doi:\href{https://link.springer.com/chapter/10.1007/978-3-031-48974-7_30}{10.1007/978-3-031-48974-7\_30}.\\
+
+{[C3]} &
+\textbf{Multi-agent Online Scheduling: MMS Allocations for Indivisible Items } \newline
+Shengwei Zhou, Rufan Bai, Xiaowei Wu.  \newline
+\textit{Proceedings of the 40th International Conference on Machine Learning (ICML)}, pages 42506-42516, Jul 2023. doi:\href{https://dl.acm.org/doi/10.5555/3618408.3620197}{10.5555/3618408.3620197}.\\
+
+\vspace{-0.48cm}\hypertarget{WEF1-EC23}{[C2]}&
+\textbf{Weighted EF1 Allocations for Indivisible Chores} \newline
+($\alpha$-$\beta$) Xiaowei Wu, Cong Zhang, Shengwei Zhou.  \newline
+\textit{Proceedings of the 24th ACM Conference on Economics and Computation (EC)}, pages 1155, Jul 2023. doi:\href{https://dl.acm.org/doi/10.1145/3580507.3597763}{10.1145/3580507.3597763}.\\
+
+\vspace{-0.48cm}\hypertarget{EFX-IJCAI22}{[C1]} &
+\textbf{Approximately EFX Allocations for Indivisible Chores} \newline
+Shengwei Zhou, Xiaowei Wu.  \newline
+\textit{Proceedings of the 31st International Joint Conference on Artificial Intelligence (IJCAI)}, pages 783-789, Aug 2022. doi:\href{https://www.ijcai.org/proceedings/2022/110}{10.24963/ijcai.2022/110}.\\
+\end{SectionTable}
+
+\begin{SectionTable}{\headingfont 期刊论文 \; \small\color{black}  ($\alpha$-$\beta$)：作者按字母序}
+{[J3]} &
+\textbf{Weighted EF1 Allocations for Indivisible Chores} \newline
+($\alpha$-$\beta$) Xiaowei Wu, Cong Zhang, Shengwei Zhou.  \newline
+\textit{Artificial Intelligence (AIJ)}, 347:104386, Oct 2025. doi:\href{https://doi.org/10.1016/j.artint.2025.104386}{10.1016/j.artint.2025.104386}. \newline 会议版本：EC 23（\hyperlink{WEF1-EC23}{C2}）。\\
+
+{[J2]} &
+\textbf{On the Existence of EFX (and Pareto-Optimal) Allocations for Binary Chores} \newline
+($\alpha$-$\beta$) Biaoshuai Tao, Xiaowei Wu, Ziqi Yu, Shengwei Zhou\textsuperscript{\Letter}.  \newline
+\textit{Theoretical Computer Science (TCS)}, 1042:115248, Jul 2025.\newline
+doi:\href{https://doi.org/10.1016/j.tcs.2025.115248}{10.1016/j.tcs.2025.115248}. 会议版本：IJTCS-FAW 24（\hyperlink{EFX-IJTCS24}{C6}）。\\
+
+{[J1]} &
+\textbf{Approximately EFX Allocations for Indivisible Chores} \newline
+Shengwei Zhou, Xiaowei Wu.  \newline
+\textit{Artificial Intelligence (AIJ)}, 326:104037, Jan 2024. doi:\href{https://doi.org/10.1016/j.artint.2023.104037}{10.1016/j.artint.2023.104037}. \newline 会议版本：IJCAI 22（\hyperlink{EFX-IJCAI22}{C1}）。\\
+\end{SectionTable}
+
+\begin{SectionTable}{\headingfont 教学经历}
+2022 秋 \\-- 2024 &
+\textbf{助教}，\textit{University of Macau}\newline
+CISC7007 Design and Analysis of Algorithm（研究生课程）\\
+
+2022 春 \\-- 2025 &
+\textbf{助教}，\textit{University of Macau}\newline
+CISC2006 Algorithm Design and Analysis（本科课程）\\
+
+2021 秋 &
+\textbf{助教}，\textit{University of Macau}\newline
+CISC3027 Special Topics in Computer and Information Science（本科课程）\\
+\end{SectionTable}
+
+\begin{SectionTable}{\headingfont 学术报告}
+2025 年 8 月 & Revisiting Proportional Allocation with Subsidy: Simplification and Improvements \newline
+\textit{IJCAI, Guangzhou} \\
+
+2025 年 4 月 & Revisiting Proportional Allocation with Subsidy: Simplification and Improvements \newline
+\textit{IOTSC Postgraduate Forum, University of Macau} \\
+
+2024 年 10 月 &
+Fair Allocations of Chores with Subsidy \newline
+\textit{Invited Talk, Kyushu University} \\
+
+2024 年 8 月 &
+On the Existence of EFX (and Pareto-Optimal) Allocations for Binary Chores\newline
+\textit{IJTCS-FAW, Hong Kong} \\
+
+2024 年 3 月 &
+PROP Allocation for Indivisible Chores with Subsidy \newline
+\textit{Invited Talk, Shanghai Jiao Tong University} \\
+
+2023 年 12 月 &
+Weighted PROP Allocations with Subsidy \newline
+\textit{Workshop on Theoretical Computer Science, University of Macau} \\
+
+2023 年 12 月 &
+Recent Development of Weighted Fair Allocation \newline
+\textit{Invited Talk, Wuhan University} \\
+
+2023 年 8 月 &
+Weighted EF1 Allocations for Indivisible Chores \newline
+\textit{Young PhD Forum, IJTCS-FAW, Macao} \\
+
+2023 年 7 月 &
+Weighted EF1 Allocations for Indivisible Chores \newline
+\textit{ACM EC, London} \\
+
+2022 年 11 月 &
+Approximately EFX Allocations for Indivisible Chores \newline
+\textit{IJCAI-China, Shenzhen} \\
+\end{SectionTable}
+
+\begin{SectionTable}{\headingfont 学术服务}
+\textbf{程序委员会委员} &
+AAMAS (2026), EC (2026), IJCAI (2026), WINE (2026), WINE (2025)\\
+
+\textbf{会议（子）审稿人} &
+NeurIPS (2026), SODA (2026), WWW (2025), ISAAC (2024), SODA (2023)\\
+
+\textbf{期刊审稿人} &
+Journal of Autonomous Agents and Multi-Agent Systems (JAAMAS), SIAM Journal on Discrete Mathematics (SIDMA)\\
+
+\textbf{组织委员会} &
+IJTCS-FAW (2023)\\
+\end{SectionTable}
+
+\end{document}
